@@ -1,0 +1,15 @@
+<header>
+    <div class="navigation">
+        <ul>
+            {{#each navigation}}
+            {{> ./partials/navigation.hbs url=url title=title }}
+            {{/each}}
+        </ul>
+    </div>
+    <div class="search-box">
+        <form id="searchForm">
+            <input type="text" placeholder="Search">
+            <button type="submit">Search</button>
+        </form>
+    </div>
+</header>

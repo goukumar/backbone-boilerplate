@@ -1,0 +1,15 @@
+{{#each products}}
+<div class="item">
+    <div class="image">
+        <img src="{{attributes.image}}" alt="{{attributes.title}}">
+    </div>
+    <div class="details">
+        <h2>{{attributes.title}}</h2>
+        <div class="info">
+            <span class="price"><strong>Price: </strong> {{attributes.price}}</span> <span
+                class="category"><strong>Category:
+                </strong>{{attributes.category}}</span>
+        </div>
+    </div>
+</div>
+{{/each}}
